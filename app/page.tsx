@@ -47,7 +47,9 @@ function HomePageContent() {
 
   return (
     <div className="p-6 lg:w-5xl md:w-[90%] mx-auto flex flex-col space-y-3">
-      <ModeToggle />
+      <div className="flex justify-end">
+        <ModeToggle />
+      </div>
       <div className="mb-4 flex items-center justify-between w-full">
         <div className="flex flex-col">
           <span className="text-2xl font-bold">Produtos</span> Total de Produtos{" "}

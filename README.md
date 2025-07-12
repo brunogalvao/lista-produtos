@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧪 Teste Frontend - Thera
 
-## Getting Started
+Este projeto foi desenvolvido como parte de um desafio técnico de Frontend. A aplicação permite gerenciar produtos com funcionalidades de **listagem, filtro, ordenação, paginação e adição de novos produtos** via formulário.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tecnologias utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js 15 (App Router)** – estrutura moderna com suporte a SSR e client components
+- **TypeScript** – para garantir segurança de tipos e melhor manutenibilidade
+- **Tailwind CSS** – estilização rápida e consistente
+- **ShadCN UI** – componentes acessíveis e com tema dark/light integrado
+- **Zustand** – gerenciamento de estado simples e leve
+- **Mock Service Worker (MSW)** – simulação de API para testes e desenvolvimento offline
+- **LocalStorage** – persistência de dados entre recarregamentos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Funcionalidades entregues
 
-## Learn More
+- ✅ **Listagem de produtos**
+- ✅ **Filtro por nome e preço**
+- ✅ **Ordenação alfabética**
+- ✅ **Paginação (6 por página)**
+- ✅ **Formulário para adicionar produtos**
+- ✅ **Contador de produtos atualizado dinamicamente**
+- ✅ **Modo escuro/claro**
+- ✅ **Responsivo em dispositivos móveis**
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Decisões técnicas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Optei por **Zustand** ao invés de Context API puro por ser mais simples, reativo e direto para esse escopo.
+- Os dados estão sendo persistidos em `localStorage` e combinados com um mock via `MSW`, facilitando o uso offline sem backend real.
+- Os **componentes do ShadCN UI** foram utilizados para manter uma UI moderna e consistente, com suporte a acessibilidade.
+- A **paginação** foi feita de forma local, com slicing no array de produtos.
+- O sistema de **filtros e ordenação** é realizado antes da paginação para garantir resultados precisos.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 Imagens
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Você pode buscar imagens diretamente no [unsplash.com](https://unsplash.com) e colar o link no campo "Imagem (URL)".
+
+---

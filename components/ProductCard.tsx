@@ -38,7 +38,7 @@ export function ProductCard({ product }: Props) {
           <div className="flex flex-col">
             <Label className="text-[10px] text-foreground">Categoria</Label>
             <span className="text-[12px] text-foreground">
-              <Badge variant="default" className="text-foreground">
+              <Badge variant="default" className="dark:text-foreground">
                 {product.category}
               </Badge>
             </span>

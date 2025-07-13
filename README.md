@@ -1,5 +1,9 @@
 # 🧪 Teste Frontend - Thera
 
+[![Tests](https://img.shields.io/badge/testes-passing-green?style=flat-square&logo=jest)](https://jestjs.io)
+[![Next.js](https://img.shields.io/badge/Next.js-15-blue?style=flat-square&logo=next.js)](https://nextjs.org)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.x-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com)
+
 Este projeto foi desenvolvido como parte de um desafio técnico de Frontend. A aplicação permite gerenciar produtos com funcionalidades de **listagem, filtro, ordenação, paginação e adição de novos produtos** via formulário.
 
 ---
@@ -44,3 +48,22 @@ Este projeto foi desenvolvido como parte de um desafio técnico de Frontend. A a
 Você pode buscar imagens diretamente no [unsplash.com](https://unsplash.com) e colar o link no campo "Imagem (URL)".
 
 ---
+
+## 💻 Como rodar o projeto
+
+Certifique-se de ter o **pnpm** instalado. Depois:
+
+```bash
+# Instalar as dependências
+pnpm install
+
+# Rodar o projeto localmente
+pnpm dev
+
+# Rodar o Teste
+pnpm test
+```
+
+---
+Desenvolvido por **Bruno Galvão**
+[GitHub](https://github.com/brunogalvao) • [LinkedIn](https://www.linkedin.com/in/brunoogalvao/)

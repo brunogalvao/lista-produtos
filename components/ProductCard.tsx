@@ -32,6 +32,7 @@ export function ProductCard({ product }: Props) {
               fill
               className="object-contain object-center rounded border"
               sizes="(max-width: 768px) 100vw, 33vw"
+              priority
             />
           </div>
 

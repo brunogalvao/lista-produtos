@@ -1,4 +1,7 @@
+import { AppSidebar } from "@/components/app-sidebar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { Toaster } from "@/components/ui/sonner";
 import "@/styles/globals.css";
 
 if (
@@ -22,7 +25,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <SidebarProvider>
+            <AppSidebar />
+            {children}
+
+            <Toaster richColors position="top-right" />
+          </SidebarProvider>
         </ThemeProvider>
       </body>
     </html>

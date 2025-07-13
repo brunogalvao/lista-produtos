@@ -20,7 +20,6 @@ import { Label } from "./ui/label";
 
 export default function ProductFormAdd() {
   const { setProducts } = useProductStore();
-
   const [open, setOpen] = useState(false);
 
   const [form, setForm] = useState({
@@ -61,7 +60,7 @@ export default function ProductFormAdd() {
       const data = await res.json();
       setProducts((prev: Product[]) => [data, ...prev]);
 
-      // limpa o formulário
+      // reset form
       setForm({
         name: "",
         price: "",

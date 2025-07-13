@@ -60,7 +60,7 @@ export default function ProductList() {
         ))}
       </div>
 
-      {/* 🔢 Paginação */}
+      {/* Paginação */}
       <div className="flex justify-center items-center gap-4">
         <Button
           variant="outline"
